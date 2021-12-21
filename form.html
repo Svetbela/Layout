@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>All Seasons|Вход</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ВХОД</h1>
+        <form class="form">             
+            <div class="form__wrapper">
+                <label for="email-box"></label>
+                <input type="email" id="email-box" class="form__input" placeholder="E-mail" value="">
+                <span class="error" id="email-error">*Поле обязательно для заполнения</span>
+            </div>
+            
+            <div class="form__wrapper">
+                <label for="password-box"></label>
+                <input type="password" id="password-box" class="form__input" placeholder="Пароль" value="">
+                <span class="error" id="password-error">*Поле обязательно для заполнения</span>
+            </div>
+
+            <div class="form__wrapper form__checkbox-wrapper">
+                <input type="checkbox" id="checkbox" class="form__checkbox">
+                <div id="check-box" class="form__check-box"></div>
+                <label for="check-box" class="form__label">Я согласен получать обновления на почту</label>
+            </div>
+
+            <button type="submit" class="form__button">Войти</button>
+        </form>  
+    </div>
+    <script src="script/form.js"></script>
+</body>
+</html>
